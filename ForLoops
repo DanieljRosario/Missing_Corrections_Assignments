@@ -1,0 +1,53 @@
+# Missing_Corrections_Assignments
+
+
+
+int i = 0; // i is set to 0;
+for (; i < 10;) { // step 1 :says i has to be less then 10 Step 2: checks to see if i is less than 10 sees it is 20 and ends the program
+System.out.println("******* new loop *******");
+for (int j = 0; j < 20; j++) { // says that j will go through 20 times no matter what the condition above says
+i++; // i will be added 20 times
+System.out.println(i); // print out the value of i which will be 20
+}
+}
+
+ 
+
+//when i ran this code i thought all was normal until i saw then it is printing our the value of i of 20 and it was set to stop //when i was 10; i realised that in the for loop it does not care what the other program thinks it wants all it knows is that it //has a task it needs to complete which was to run the i++ cycle 20 times ending with the end result being 20 and going to the //top for the value of i to be checked seeing it is more then 10 and stopping the program.
+
+___________________________________________________________
+
+//Self example
+
+ 
+
+ 
+
+/
+public static void main(String[] args) {
+int i = 0;
+int k = 0;
+
+
+for (; i < 10;) {  // nested for loop
+for (; k < 30;) { // this is the condition for the loop below to execute
+for (int f = 0; f < 25; f++) {  // this will make K and I go up by 25 each
+k++;
+i++;
+System.out.println("K's output is " + k);
+System.out.println("");
+System.out.println("I's output is " + i);
+
+}
+
+}
+
+// TODO code application logic here
+}
+
+}
+}
+
+// My output is confounding because people will think that because I is 25 after the first loop they will think the program will //stop but in reality when i goes to 25 and k goes to 25: While I is more then it should be the K loop does not care what the I //loop says because for the K loop it says that it needs to be 30 to stop and right now its 25 so it runs the loop again //increasing K and I's value to 50 and then stopping.
+
+ 
